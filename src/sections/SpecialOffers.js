@@ -1,6 +1,7 @@
 import React from 'react'
 import { offer } from '../assets/images';
 import Button from '../components/Button';
+import { arrowRight } from '../assets/icons';
 
 
 const SpecialOffers = () => {
@@ -19,8 +20,9 @@ const SpecialOffers = () => {
         <p className='mt-6 lg:max-w-lg info-text'>Navigate a realm of possibilities designed to fulfill your unique
           desires, surpassing the loftiest expectations. Your journey with us is
           nothing short of exceptional.</p>
-        <div className='mt-11'>
-          <Button label="View Detalis" />
+        <div className='mt-11 flex flex-wrap gap-4'>
+          <Button label="Shop Now" iconURL={arrowRight} />
+          <Button label="Learn more" backgroundColor="bg-white" borderColor="border-slate-gray" textColor="text-state-gray" />
         </div>
       </div>
     </section>
